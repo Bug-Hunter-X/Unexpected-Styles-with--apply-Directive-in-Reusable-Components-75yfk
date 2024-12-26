@@ -1,0 +1,1 @@
+This issue arises when using Tailwind's `@apply` directive within a component, particularly when that component is reused multiple times.  The problem is that Tailwind's JIT engine processes `@apply` directives only once per component, not per instance of the component. This causes unexpected behavior when the styles applied via `@apply` depend on the component's state or props.
